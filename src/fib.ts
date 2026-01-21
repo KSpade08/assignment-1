@@ -8,5 +8,8 @@ export default function fibonacci(n: number): number {
     return 1;
   }
 
-  return fibonacci(n - 1) + fibonacci(n - 2);
+  const a: number = fibonacci(n - 1);
+  const b: number = fibonacci(n - 2);
+
+  return a + b;
 }
